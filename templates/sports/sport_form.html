@@ -15,7 +15,7 @@
         <input type="text" id="location" name="location" value="{{ sport.location }}">
         <br><br>
         <label for="date">Date</label>
-        <input type="date" id="date" name="date" value="{{ sport.date }}">
+        <input type="date" id="date" name="date" value="{{ sport.date | date:'Y-m-d' }}">
         <br><br>
         <label for="sport_type">Sport Type</label>
         <input type="text" id="sport_type" name="sport_type" value="{{ sport.sport_type }}">

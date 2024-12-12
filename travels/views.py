@@ -52,6 +52,6 @@ def travel_update(request, travel_id):
             travel.pop_season = pop_season
             travel.save()
             return redirect(travel.get_detail_url())
-    ctx = {'travels': travel}
+    ctx = {'travel': travel}
     return render(request, 'travels/travel_form.html', ctx)
 

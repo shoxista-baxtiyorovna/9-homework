@@ -45,7 +45,7 @@ def sport_update(request, sport_id):
         location = request.POST.get('location')
         date = request.POST.get('date')
         sport_type = request.POST.get('sport_type')
-        print(request.POST)
+        print(location, event_name, date, sport_type)
         if event_name and location and date and sport_type:
             sport.event_name = event_name
             sport.location = location

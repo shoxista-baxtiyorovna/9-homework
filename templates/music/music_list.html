@@ -8,8 +8,8 @@
     <h1>Music Albums</h1>
     <button><a href="{% url 'home' %}">Back to Home</a></button>
     <button><a href="{% url 'music:music_create' %}">Create Album</a></button>
-    {% for track in music %}
-        <a href="{{ music.get_detail_url }}"><h3>{{ music.album_title }}</h3></a>
+    {% for track in tracks %}
+        <a href="{{ track.get_detail_url }}"><h3>{{ track.album_title }}</h3></a>
     {% empty %}
         <h3>There are no albums yet</h3>
     {% endfor %}
