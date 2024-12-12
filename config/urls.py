@@ -21,5 +21,8 @@ from movies.views import home
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('movies/', include('movies.urls')),
+    path('sports/', include('sports.urls')),
+    path('music/', include('music.urls')),
+    path('travels/', include('travels.urls')),
     path('', home, name='home')
 ]
